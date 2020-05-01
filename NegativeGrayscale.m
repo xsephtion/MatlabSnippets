@@ -1,0 +1,17 @@
+img = imread('lenna.jpg');
+imgneg = imcomplement(img);
+gray = rgb2gray(img);
+imgryc = imcomplement(gray);
+fontSize=10;
+subplot(2,2,1);
+imshow(img);
+title('original image','FontSize',fontSize);
+subplot(2,2,3);
+imshow(imgneg);
+title('negative of image','FontSize',fontSize);
+subplot(2,2,2);
+imshow(gray);
+title('grayscale image','FontSize',fontSize);
+subplot(2,2,4);
+imshow(imgryc);
+title('negative of gray scale image','FontSize',fontSize);
